@@ -1,6 +1,6 @@
 # Programs for bioinfomatics course in Coursera
 
-The programs are made to solve problems in [Genome sequencing](https://www.coursera.org/learn/genome-sequencing) bioinfomatics course of Coursera in Rust.   
+The programs are made to solve problems in [Genome sequencing](https://www.coursera.org/learn/genome-sequencing)of bioinfomatics course of Coursera in Rust.   
 The reason why I write in rustlang is generally faster and more handful to big data like complete genome sequence than Python which is usually used in bioinfomatics for many reasons.    
 I write down the explanation of important functions under the directory, maybe. So check out more info by digging into each dir.
 
