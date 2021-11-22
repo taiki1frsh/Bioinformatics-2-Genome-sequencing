@@ -1,0 +1,24 @@
+[package]
+name = "genome_seq"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "w1"
+path = "src/main_w1.rs"
+
+[[bin]]
+name = "w2"
+path = "src/main_w2.rs"
+
+[[bin]]
+name = "w3"
+path = "src/main_w3.rs"
+
+[[bin]]
+name = "w4"
+path = "src/main_w4.rs"
