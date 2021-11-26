@@ -27,9 +27,10 @@ pub fn arange_for_eulerian_cycle() -> (Vec<i32>, Vec<Vec<i32>>, i32) {
                 .split(' ')
                 .map(|x| x.parse().unwrap_or(0) as i32)
                 .collect();           
+            num_element += vec_str.len();
             out_vec.insert(count2, vec_str);
             count2 += 1;
-            num_element += vec_str.len();
+            
         }
     }
     (in_vec, out_vec, num_element as i32)
