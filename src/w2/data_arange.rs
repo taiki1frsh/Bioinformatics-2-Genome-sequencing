@@ -19,7 +19,7 @@ pub fn arange_for_eulerian_cycle() -> (Vec<i32>, Vec<Vec<i32>>, i32) {
     let mut num_element = 0;
     for i in 0..node_elements.len() {
         if i % 2 == 0 {
-            let num: i32 = node_elements[i + 1].parse().unwrap_or(0);
+            let num: i32 = node_elements[i].parse().unwrap_or(0);
             in_vec.insert(count1, num);
             count1 += 1;
         } else {
