@@ -1,14 +1,18 @@
-use std::{collections::{BTreeMap, HashMap}, env};
+use std::{collections::BTreeMap, env};
 
 // require the command line argument in this fn
+// the file format must be spefic to this format like,
+// 0 <- node
+// 1 2 <- edges
+// continue...
 pub fn arange_for_eulerian_cycle() -> (Vec<i32>, Vec<Vec<i32>>, i32) {
     let args: Vec<String> = env::args().collect();
     let path = &args[1];
     let f = std::fs::File::open(path).unwrap();
     let reader = std::io::BufReader::new(f);
-    let mut lines = std::io::BufRead::lines(reader).into_iter();
+    let lines = std::io::BufRead::lines(reader).into_iter();
 
-    let mut node_elements: Vec<String> = lines
+    let node_elements: Vec<String> = lines
         .map(|x| x.unwrap())
         .collect();
 
@@ -30,7 +34,6 @@ pub fn arange_for_eulerian_cycle() -> (Vec<i32>, Vec<Vec<i32>>, i32) {
             num_element += vec.len();
             out_vec.insert(count2, vec);
             count2 += 1;
-            
         }
     }
     (in_vec, out_vec, num_element as i32)
@@ -41,9 +44,9 @@ pub fn arange_for_eulerian_cycle_hashmap() -> (BTreeMap<i32, Vec<i32>>, usize) {
     let path = &args[1];
     let f = std::fs::File::open(path).unwrap();
     let reader = std::io::BufReader::new(f);
-    let mut lines = std::io::BufRead::lines(reader).into_iter();
+    let lines = std::io::BufRead::lines(reader).into_iter();
 
-    let mut node_elements: Vec<String> = lines
+    let node_elements: Vec<String> = lines
         .map(|x| x.unwrap())
         .collect();
 
