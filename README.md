@@ -10,10 +10,11 @@ To test them, type it under the directory
 
 ### Content
 - week1   
-   
-- week2
    - diruijn graph
+   - overlap graph   
+- week2
    - eulerian path/ circuit
+   - k-universal circular string   
 
 ## Contribution
 
