@@ -15,6 +15,8 @@ To test them, type it under the directory
 - week2
    - eulerian path/ circuit
    - k-universal circular string   
+- week3
+   - rna to amino acid translator
 
 ## Contribution
 
