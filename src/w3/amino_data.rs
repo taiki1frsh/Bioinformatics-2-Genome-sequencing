@@ -50,15 +50,15 @@ pub fn get_amino_table<'a>(mut amino_table: HashMap<&'a str, &'a str>) -> HashMa
     amino_table.insert("GUC", "V");
     amino_table.insert("GUG", "V");
     amino_table.insert("GUU", "V");
-    amino_table.insert("UAA", "*");
+    amino_table.insert("UAA", "");
     amino_table.insert("UAC", "Y");
-    amino_table.insert("UAG", "*");
+    amino_table.insert("UAG", "");
     amino_table.insert("UAU", "Y");
     amino_table.insert("UCA", "S");
     amino_table.insert("UCC", "S");
     amino_table.insert("UCG", "S");
     amino_table.insert("UCU", "S");
-    amino_table.insert("UGA", "*");
+    amino_table.insert("UGA", "");
     amino_table.insert("UGC", "C");
     amino_table.insert("UGG", "W");
     amino_table.insert("UGU", "C");
