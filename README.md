@@ -17,6 +17,7 @@ To test them, type it under the directory
    - k-universal circular string   
 - week3
    - rna to amino acid translator
+   - generate theoretical spectrum
 
 ## Contribution
 
