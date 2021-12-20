@@ -70,9 +70,39 @@ pub fn get_amino_table<'a>(mut amino_table: HashMap<&'a str, &'a str>) -> HashMa
     amino_table
 }
 
+pub fn get_amino_mass_table(mut mass_table: HashMap<char, usize>) -> HashMap<char, usize> {
+    mass_table.insert('G', 57);
+    mass_table.insert('A', 71);
+    mass_table.insert('S', 87);
+    mass_table.insert('P', 97);
+    mass_table.insert('V', 99);
+    mass_table.insert('T', 101);
+    mass_table.insert('C', 103);
+    mass_table.insert('I', 113);
+    mass_table.insert('L', 113);
+    mass_table.insert('N', 114);
+    mass_table.insert('D', 115);
+    mass_table.insert('K', 128);
+    mass_table.insert('Q', 128);
+    mass_table.insert('E', 129);
+    mass_table.insert('M', 131);
+    mass_table.insert('H', 137);
+    mass_table.insert('F', 147);
+    mass_table.insert('R', 156);
+    mass_table.insert('Y', 163);
+    mass_table.insert('W', 186);
+    mass_table
+} 
+
 #[test]
 fn test_get_amino_table() {
     let mut amino_table = HashMap::new();
     amino_table = get_amino_table(amino_table);
+
     println!("{amino_table:?} - {}", amino_table.len());
+
+    let mut mass_table = HashMap::new();
+    mass_table = get_amino_mass_table(mass_table);
+    println!("{mass_table:?}");
 }
+
